@@ -1,7 +1,6 @@
 READ_ME for swAlign.py
 
 Description:
-This is the module 2 short project submission written in Python v3.4.
 This project is an implementation of the Smith-Waterman local alignment algorithm with a linear gap penalty.
 This project will by default perform a local alignment on the 2 strings provided with the scoring parameters provided.
 However match, mismatch, gap scores and two fasta format sequence file can be passed for customization.
@@ -17,14 +16,14 @@ localAligner.py (class to create DP tables and calculate the alignment)
 argChecker.py (class to handle and check command line arguments)
 
 FASTA Files:
-StringQ.fasta (Q string for assignment)
-StringP.fasta (P string for assignment)
+StringQ.fasta (Q string default)
+StringP.fasta (P string default)
 FpGAPDH.fasta (Festuca pratensis GAPDH)
 FpGAPDH_Mutations.fasta (Mutations and deletions added for testing)
 
 Usage:
 Program usage:
-python3 swAlign.py (Assignment parameters)
+python3 swAlign.py
 Or
 python3 swAlign.py <matchScore> <mismatchScore> <gapPenalty> <Sequence1> <Sequence2>
 Or
