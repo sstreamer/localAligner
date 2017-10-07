@@ -4,14 +4,14 @@ __author__ = 'Stef'
 
 '''
 This class is an implementation of the Smith-Waterman local alignment algorithm with a linear gap model.
-Two sequences, either default for Mod 2 project or provided by the user in fasta format
-are inputs for sequence alignment. Either default (for Mod 2 project) scoring parameters
-or user proved (at the command line) parameters are used.
+Two sequences, either default or provided by the user in fasta format
+are inputs for sequence alignment. Either default scoring parameters
+or user provided (at the command line) parameters are used.
 '''
 class LocalAligner(object):
     #Constructor
     def __init__(self, match=None, mismatch=None, gap=None, fileP=None, fileQ=None):
-        #Arguments for Module 2 Small Project
+        #Default arguments
         #StringQ = GCTGGAAGGCAT
         #StringP = GCAGAGCACG
         #Match Score = +5, Mismatch Score = -4, Gap Penalty = -4
