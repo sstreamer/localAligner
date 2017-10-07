@@ -56,7 +56,7 @@ def main():
     #Parameter names for user provided arguments at the command line
     argsNames = ["--matchScore=","--mismatchScore=","--gapPenalty=","--seq1=","--seq2="]
 
-    #Determine if default arguments are to be used: Module 2 Small Project
+    #Determine if default arguments are to be used
     if len(sys.argv) == 1:
         #Perform local alignment on default parameters
         aligner = LocalAligner()
